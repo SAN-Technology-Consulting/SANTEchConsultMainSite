@@ -20,9 +20,7 @@ export function Contact() {
   return (
     <Card className="contact sections">
       <Card.Header>
-        <h1>
-          <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>&nbsp;Contact Us
-        </h1>
+        <h1>Contact Us</h1>
       </Card.Header>
       <Card.Body>
         <Email show={showModal} handleClose={closeModal}></Email>
