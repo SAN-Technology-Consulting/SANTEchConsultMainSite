@@ -22,16 +22,14 @@ export function Home() {
               juvenile justice systems, and our innovative technology is
               designed to help you manage and transform your operations
               effectively. 
- */}{" "}
-              Our mission is to revolutionize the juvenile justice system in the
-              state of Texas by providing a cutting-edge content management
-              system tailored to the unique needs of juvenile probation, law
-              enforcement, prosecutors, and county & clerk districts managing
-              at-risk youth. Our state-of-the-art software is designed to
-              empower these stakeholders with holistic data and
-              information-sharing capabilities, enabling them to make informed
-              decisions quickly and efficiently, leading to improved outcomes
-              for the youth in their care.
+ */}
+              Our vision is to be the foremost technology partner for juvenile
+              justice agencies in Texas, driving a statewide approach to
+              information-sharing and youth rehabilitation. We aspire to be the
+              catalyst for positive change in the lives of at-risk youth and
+              children in need of supervision by providing a comprehensive and
+              user-friendly content management system that revolutionizes how
+              data is utilized and shared within the juvenile justice system.
             </p>
           </div>
           <div className="float-end me-5">

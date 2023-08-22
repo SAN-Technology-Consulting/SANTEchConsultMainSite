@@ -1,4 +1,4 @@
-To Deploy: npm run deploy
+*********** To Deploy: npm run deploy
 
 https://medium.com/@taya.ugay/deploying-react-app-with-github-pages-and-google-domains-in-10-minutes-c3820eba5207
 

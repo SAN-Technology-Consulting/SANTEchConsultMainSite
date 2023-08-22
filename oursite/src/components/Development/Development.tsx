@@ -19,7 +19,9 @@ export function Development() {
               strategic expertise and technical know-how. This enables us to
               work seamlessly alongside our partners. Throughout our journey,
               our team has successfully engaged with various officials,
-              including CIOs, County Commisssioners and County Project Managers.
+              including CIOs, county commisssioners, and project managers to
+              implement robust solutions designed to meet the needs of each
+              department.
             </p>
             <p>
               Our mission is to revolutionize the juvenile justice system in the
