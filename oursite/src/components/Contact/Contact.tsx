@@ -20,20 +20,19 @@ export function Contact() {
   return (
     <Card className="contact sections">
       <Card.Header>
-        <h1>
-          <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>&nbsp;Contact Us
-        </h1>
+        <h1>Contact Us</h1>
       </Card.Header>
       <Card.Body>
-        <Email show={showModal} handleClose={closeModal}></Email>
+        {/* <Email show={showModal} handleClose={closeModal}></Email> */}
         <p>
-          Want to get in touch ? Click the link below and we will be in touch
-          with you shortly
+          Want to get in touch ? Just fill out the form below and we will be in
+          touch with you shortly
         </p>
-        <Button variant="contained" color="success" onClick={handleClick}>
+        <Email></Email>
+        {/* <Button variant="contained" color="success" onClick={handleClick}>
           <FontAwesomeIcon icon={faPaperPlane}></FontAwesomeIcon>{" "}
           &nbsp;&nbsp;Contact us
-        </Button>
+        </Button> */}
       </Card.Body>
       <Card.Footer>
         <span className="fs-8 float-end">

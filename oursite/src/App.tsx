@@ -16,7 +16,7 @@ function App() {
 
       <Navbar expand="lg">
         <Container fluid>
-          <Navbar.Brand>SAN Technology Consulting</Navbar.Brand>
+          {/* <Navbar.Brand>SAN Technology Consulting</Navbar.Brand> */}
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -26,7 +26,7 @@ function App() {
             >
               <Nav.Item>
                 <Nav.Link as={NavLink} to="/" eventKey={"Home"}>
-                  Services
+                  Home
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
@@ -49,8 +49,8 @@ function App() {
       </Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Development" element={<Development />} />
         <Route path="/ContactUs" element={<Contact />} />
+        <Route path="/Development" element={<Development />} />
       </Routes>
     </Container>
   );
