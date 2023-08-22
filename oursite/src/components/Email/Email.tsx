@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Contact } from "../Contact";
-import { Container } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
 import { toast } from "react-toastify";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -32,7 +32,7 @@ interface EmailEntryFormData {
   comments: string;
 }
 
-export function Email(props: EmailProps) {
+export function Email() {
   const SITE_KEY = "6Le1pGonAAAAAF-4ebGNTzZskEtzoxMjyQBG3ozj";
 
   const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
@@ -101,7 +101,7 @@ export function Email(props: EmailProps) {
           reset();
           setIsSubmitDisabled(true);
           captchaRef?.current?.reset();
-          props.handleClose();
+          //props.handleClose();
         },
         (err) => {
           console.log(err);
@@ -113,18 +113,20 @@ export function Email(props: EmailProps) {
   }
 
   return (
-    <Modal
-      show={props.show}
-      onHide={props.handleClose}
-      backdrop="static"
-      size="lg"
-      centered
-    >
-      <form onSubmit={handleSubmit(onSaveData)} ref={form}>
-        <Modal.Header closeButton className="modal-header primary">
-          <Modal.Title>Contact Us</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
+    // <Modal
+    //   show={props.show}
+    //   onHide={props.handleClose}
+    //   backdrop="static"
+    //   size="lg"
+    //   centered
+    // >
+    <form onSubmit={handleSubmit(onSaveData)} ref={form}>
+      <Card>
+        <Card.Body>
+          {/* <Modal.Header closeButton className="modal-header primary">
+            <Modal.Title>Contact Us</Modal.Title>
+          </Modal.Header>
+          <Modal.Body> */}
           <Row>
             <Input
               id="name"
@@ -180,8 +182,8 @@ export function Email(props: EmailProps) {
               {...register("comments")}
             ></Input>
           </Row>
-        </Modal.Body>
-        <Modal.Footer>
+          {/* </Modal.Body>
+          <Modal.Footer> 
           <div style={{ width: 1500 }}>
             <div className="float-start">
               <ReCAPTCHA
@@ -191,10 +193,10 @@ export function Email(props: EmailProps) {
               />
             </div>
             <div className="float-end mt-4">
-              <Button variant="secondary" onClick={props.handleClose}>
-                <FontAwesomeIcon icon={faTimesCircle}></FontAwesomeIcon>
-                &nbsp;Close
-              </Button>
+              {/* <Button variant="secondary" onClick={props.handleClose}>
+              <FontAwesomeIcon icon={faTimesCircle}></FontAwesomeIcon>
+              &nbsp;Close
+            </Button> 
               <Button
                 className="ms-2"
                 variant="success"
@@ -206,8 +208,29 @@ export function Email(props: EmailProps) {
               </Button>
             </div>
           </div>
-        </Modal.Footer>
-      </form>
-    </Modal>
+          {/* </Modal.Footer> */}
+        </Card.Body>
+        <Card.Footer>
+          <div className="float-start">
+            <ReCAPTCHA
+              sitekey={SITE_KEY}
+              ref={captchaRef}
+              onChange={checkCatpcha}
+            />
+          </div>
+          <div className="float-end mt-4">
+            <Button
+              className="ms-2"
+              variant="success"
+              type="submit"
+              disabled={isSubmitDisabled}
+            >
+              <FontAwesomeIcon icon={faPaperPlane}></FontAwesomeIcon>&nbsp; Send
+            </Button>
+          </div>
+        </Card.Footer>
+      </Card>
+    </form>
+    // </Modal>
   );
 }

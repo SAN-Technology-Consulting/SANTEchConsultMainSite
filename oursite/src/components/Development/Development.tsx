@@ -8,9 +8,7 @@ export function Development() {
   return (
     <Card className="contact sections">
       <Card.Header>
-        <h1>
-          <FontAwesomeIcon icon={faKeyboard}></FontAwesomeIcon>&nbsp;Software
-        </h1>
+        <h1>Software Development</h1>
       </Card.Header>
       <Card.Body>
         <div className="subSection">
@@ -24,11 +22,15 @@ export function Development() {
               including CIOs, County Commisssioners and County Project Managers.
             </p>
             <p>
-              Optimize your internal processes, enhance data management, and
-              save valuable time through the implementation of paperless
-              workflows. Address your business-critical challenges with greater
-              efficiency and effectiveness by leveraging our expertise in custom
-              application development.
+              Our mission is to revolutionize the juvenile justice system in the
+              state of Texas by providing a cutting-edge content management
+              system tailored to the unique needs of juvenile probation, law
+              enforcement, prosecutors, and county & clerk districts managing
+              at-risk youth. Our state-of-the-art software is designed to
+              empower these stakeholders with holistic data and
+              information-sharing capabilities, enabling them to make informed
+              decisions quickly and efficiently, leading to improved outcomes
+              for the youth in their care.
             </p>
           </div>
           <div className="float-end ms-3 me-5">
